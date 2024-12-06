@@ -1,12 +1,14 @@
 package com.org.customermanagement.service;
 
+import com.org.customermanagement.service.UserService;
+import jakarta.transaction.Transactional;
+import lombok.RequiredArgsConstructor;
 import com.org.customermanagement.model.Role;
 import com.org.customermanagement.model.User;
 import com.org.customermanagement.repository.UserRepository;
-import jakarta.transaction.Transactional;
-import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+
 
 import java.time.LocalDateTime;
 import java.util.List;
